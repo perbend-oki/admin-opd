@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Admin</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- CryptoJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="login-form" id="login-form">
+          <h1>Login Admin</h1>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <button type="submit">Login</button>
+      </form>
+    </div>
+    <script src="./login.admin.js" type="module"></script>
+  </body>
+</html>
