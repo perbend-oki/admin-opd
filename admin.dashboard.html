@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./admin.dashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bcryptjs@2.4.3/dist/bcrypt.js"></script>
+</head>
+<body>
+    <div style="text-align: end;">
+      <button id="btn-logout" type="button">Logout</button>
+    </div>
+    <div class="dashboard">
+        <h1>Admin Dashboard</h1>
+        <form class="user-form" id="data-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password (Jika akun baru):</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="year">Year:</label>
+                <input type="number" id="year" name="year" min="0" step="1" required>
+            </div>
+            <div class="form-group">
+                <label for="privateUrl">OPD URL:</label>
+                <input type="text" id="privateUrl" name="privateUrl" required>
+            </div>
+            <button type="submit">Tambah/Update OPD</button>
+        </form>
+    </div>
+    
+    <script src="./admin.dashboard.js" type="module"></script>
+</body>
+</html>
