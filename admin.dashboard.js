@@ -132,6 +132,8 @@ dataForm.addEventListener('submit', async (event) => {
       );
       if (isUpdated) {
         alert('Berhasil mengupdate data');
+        dataForm.reset();
+        usernameInput.value = username;
       }
     } else {
       const isCreated = await createData(
@@ -142,6 +144,8 @@ dataForm.addEventListener('submit', async (event) => {
       );
       if (isCreated) {
         alert('Berhasil menambahkan data');
+        dataForm.reset();
+        usernameInput.value = username;
       }
     }
   } catch (error) {
