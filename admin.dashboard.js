@@ -12,7 +12,7 @@ const urlInput = document.getElementById('privateUrl');
 const logoutBtn = document.getElementById('btn-logout');
 
 const redirectToLogin = () => {
-  window.location.replace('./admin.html');
+  window.location.replace('./index.html');
 };
 
 onAuthStateChanged(auth, (user) => {
